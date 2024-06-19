@@ -34,8 +34,10 @@ export default function Home() {
   });
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-4">
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-slate-400">
       <div className="w-full max-w-3xl">
+
+        <h1 className="text-center text-xl mb-3 font-semibold">Movie Search App</h1>
 
         <SearchBar
           searchTerm={searchTerm}
