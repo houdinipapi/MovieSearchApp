@@ -6,7 +6,7 @@ export interface Movie {
     category: string;
 };
 
-const movies: Movie[] = [
+const moviesData: Movie[] = [
     {
         title: "The Matrix",
         rating: 7.5,
@@ -34,4 +34,4 @@ const movies: Movie[] = [
     },
 ]
 
-export default movies;
+export default moviesData;
