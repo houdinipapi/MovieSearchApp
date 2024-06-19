@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
+import MovieList from "@/components/MovieList";
 import moviesData, { Movie } from "@/data/movies";
+import Filters from "@/components/Filters";
 
 
 export default function Home() {
@@ -14,7 +16,7 @@ export default function Home() {
     setSearchTerm(term);
   };
 
-  const handleRatingFilter = (rating: number) => {
+  const handleRatingFilter = (rating: number | null) => {
     setRatingFilter(rating);
   };
 
@@ -39,6 +41,8 @@ export default function Home() {
           searchTerm={searchTerm}
           onSearch={handleSearch}
         />
+        <MovieList movies={filteredMovies} />
+        <Filters onRatingFilter={handleRatingFilter} onCategoryFilter={handleCategoryFilter} />
 
       </div>
     </main>
