@@ -18,7 +18,7 @@ const Filters: React.FC<FiltersProps> = ({ onRatingFilter, onCategoryFilter }) =
     };
 
     return (
-        <div className='fle space-x-4 my-3'>
+        <div className='flex justify-center space-x-4 my-3'>
             <select onChange={handleRatingChange} className="p-2 border rounded" title="Rating Filter">
                 <option value="">All Ratings</option>
                 <option value="5">5 and above</option>
